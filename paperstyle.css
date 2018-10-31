@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+body {
+ height: 2000px;
+ 
+}
+ul {
+    list-style: none;
+}
+header {
+    padding: 0 20px; 
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: large;
+   
+}
+
+
+nav ul li{margin: 0 10px;
+    display: inline-block}
+    a:visited {
+        text-shadow: black;
+        color: firebrick;
+        text-decoration: underline;
+        
+    }
+    
+    @keyframes mymove {
+        from {left: 0;}
+        to {left: 300px;}
+    }
+
+   
+ .grid-container {
+    -webkit-animation: mymove 5s infinite;
+    animation-timing-function: ease-in;
+     background-color: bisque;
+     font-family: 'Playfair Display', serif;
+     position: absolute;
+     left: 110;
+     margin: 1%;
+     width: 300px;
+     display: grid;
+     grid-template-columns: 1fr;
+     
+     grid-auto-rows: 96em;
+     grid-gap: 5px;
+     border: 3px solid silver;
+     border-style: outset;
+     }
+     .vidgrid {
+         background-color: bisque;
+         font-family: 'Playfair Display', serif;
+         display: grid;
+         grid-template-rows: 100% 100%/ 50%;
+         width: 300px;
+         grid-row-gap: 5px;
+         position: absolute;
+         right: 110;
+         margin: 1%;
+         border: 3px solid silver;
+         border-style: outset;
+       }   
+
+    .compbox {
+        background-color: bisque;
+        font-family: 'Playfair Display', serif;
+        margin: 0;
+        border: 3px solid silver;
+        border-style: outset;
+        top: 900px;
+        height: 380px;
+        width: 420px;
+        right: 0;
+        position: absolute;
+        bottom: 5;
+         
+    }
+
+.socialmeds {
+    margin-bottom: 5px;
+    background-color: bisque;
+}
+
+.socialmeds img {
+    width: 32px; height: 32px; 
+}
+
+
+
+footer ul li {
+    margin: 0 10px; display: inline-block;}
+
+footer p {
+    color: #fff margin: 0;}
+
+footer p scan {
+    color: silver}
+
+
+footer {
+    width: 100%;
+    margin-top: 1699px;
+    padding: 10px 0;
+    background-color: silver; 
+    text-align: center;
+    }
+    
