@@ -24,16 +24,15 @@ nav ul li{margin: 0 10px;
         text-decoration: underline;
         
     }
+
+
+
     
-    @keyframes mymove {
-        from {left: 0;}
-        to {left: 300px;}
-    }
+ 
 
    
  .grid-container {
-    -webkit-animation: mymove 5s infinite;
-    animation-timing-function: ease-in;
+    
      background-color: bisque;
      font-family: 'Playfair Display', serif;
      position: absolute;
@@ -48,6 +47,14 @@ nav ul li{margin: 0 10px;
      border: 3px solid silver;
      border-style: outset;
      }
+
+.grid-container div:hover {
+    transform: scale(1.1);
+}
+
+
+
+
      .vidgrid {
          background-color: bisque;
          font-family: 'Playfair Display', serif;
