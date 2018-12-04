@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
 
-body {
- height: 2000px;
- 
+
+html {
+    background-color: #736E6E;
 }
+
+
 ul {
     list-style: none;
 }
@@ -19,74 +22,196 @@ header {
 nav ul li{margin: 0 10px;
     display: inline-block}
     a:visited {
-        text-shadow: black;
-        color: firebrick;
+        
+        color: #0B0809;
         text-decoration: underline;
         
     }
 
-
-
-    
- 
-
-   
- .grid-container {
-    
-     background-color: bisque;
-     font-family: 'Playfair Display', serif;
-     position: absolute;
-     left: 110;
-     margin: 1%;
-     width: 300px;
-     display: grid;
-     grid-template-columns: 1fr;
-     
-     grid-auto-rows: 96em;
-     grid-gap: 5px;
-     border: 3px solid silver;
-     border-style: outset;
-     }
-
-.grid-container div:hover {
-    transform: scale(1.1);
+h2 {
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    color: #F3F3F4;
+    font-size: 50px;
 }
 
 
 
 
-     .vidgrid {
-         background-color: bisque;
-         font-family: 'Playfair Display', serif;
-         display: grid;
-         grid-template-rows: 100% 100%/ 50%;
-         width: 300px;
-         grid-row-gap: 5px;
-         position: absolute;
-         right: 110;
-         margin: 1%;
-         border: 3px solid silver;
-         border-style: outset;
-       }   
 
-    .compbox {
-        background-color: bisque;
-        font-family: 'Playfair Display', serif;
-        margin: 0;
-        border: 3px solid silver;
-        border-style: outset;
-        top: 900px;
-        height: 380px;
-        width: 420px;
-        right: 0;
-        position: absolute;
-        bottom: 5;
-         
+
+.slideshow-container {
+  box-sizing: border-box;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;}
+
+.slideshow-container img {
+    vertical-align: middle;
+    width: 800;
+    height: 400;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  font-family: 'Abril Fatface';
+  background-color: #736E6E;
+  color: brown;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade  {
+  from {opacity: .4} 
+  to {opacity: 1}
+  
+}
+
+@keyframes fade  {
+  from {opacity: .4} 
+  to {opacity: 1}
+
+}
+
+@-webkit-keyframes pulse {
+    from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
     }
+  
+    50% {
+      -webkit-transform: scale3d(1.05, 1.05, 1.05);
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+  
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
+  @keyframes pulse {
+    from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  
+    50% {
+      -webkit-transform: scale3d(1.05, 1.05, 1.05);
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+  
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
+
+
+   
+
+ .grid-container {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 300px 300px;
+  grid-template-areas: ". . ." ". . .";
+  grid-gap: 3em;
+  position: sticky;
+  justify-content: center;
+  font-family: 'Abril Fatface';
+  
+}
+
+#loud {
+ font-family: 'Playfair Display', serif;
+}
+
+.web {
+    color: firebrick;
+}
+
+.web img {
+    
+    width: 200;
+    height: 200;
+    box-shadow: 0 0 0 rgba(223, 8, 8, 0.4); 
+    animation: pulse 1s infinite;
+    -webkit-animation-name: pulse;
+} 
+
+#btn8 {
+    cursor: pointer;
+    border-radius: 12px;
+    background-color: firebrick;
+}
+
+
 
 .socialmeds {
     margin-bottom: 5px;
-    background-color: bisque;
+    background-color: #736E6E;
 }
 
 .socialmeds img {
@@ -99,7 +224,7 @@ footer ul li {
     margin: 0 10px; display: inline-block;}
 
 footer p {
-    color: #fff margin: 0;}
+    color: silver margin: 0;}
 
 footer p scan {
     color: silver}
@@ -107,9 +232,9 @@ footer p scan {
 
 footer {
     width: 100%;
-    margin-top: 1699px;
+    bottom: 0;
     padding: 10px 0;
-    background-color: silver; 
+    background-color: #736E6E; 
     text-align: center;
     }
     
